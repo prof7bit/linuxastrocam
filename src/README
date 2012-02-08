@@ -1,17 +1,19 @@
-RUNNING THE BINARAY
-===================
-The downloadable archive contains the statically linked
-executable. Simply untar and execute the binary, there
-is no installer, you can manually copy it to /usr/local/bin
-if you want to have it always in your path.
+## BUILDING FROM SOURCE
 
-Folders for the saved images will always be created in
-the current woking directory from which you start the
-program. Keep this in mind when making a desktop shortcut.
+This project was developed with Lazarus-0.9.31 and FPC-2.4.2
+
+It should be possible to also build it with the stable
+release of Lazarus-0.9.30, it does not use any things
+that are specific to the very latest SVN release, at least
+not to my knowledge and not intentionally.
+
+To build it from source open the project file linuxastrocam.lpi 
+with Lazarus and from the menu select Run -> Build. 
+This should give you the excutable binary.
 
 
-PROBLEMS
-========
+## PROBLEMS
+
 I have tested it only on i386, the program makes a few
 hardcoded assumptions about how GTK2 stores raw bitmaps
 and this might lead to unexpected results on 64 bit
@@ -31,24 +33,8 @@ v4l2 component from the 5dpo project.
 This program is only a dirty hack to make some things
 easier for me, don't expect me to add every feature you
 might suggest. The main reason why I uploaded this on
-sourceforge was to document for other Pascal programmers 
+github was to document for other Pascal programmers 
 how to access v4l1 devices and how I managed to create 
 FITS files. 
 
 
-BUILDING FROM SOURCE
-====================
-This project was developed with Lazarus-0.9.31 and FPC-2.4.2
-
-It should be possible to also build it with the stable
-release of Lazarus-0.9.30, it does not use any things
-that are specific to the very latest SVN release, at least
-not to my knowledge and not intentionally.
-
-To build it from source simply check out the trunk,
-open the project file linuxastrocam.lpi with Lazarus 
-and from the menu select Run -> Build. This should
-give you the excutable binary.
-
-The downloadable release binaries are smart linked 
-and stripped to make them a few MB smaller.
