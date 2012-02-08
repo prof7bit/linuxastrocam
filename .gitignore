@@ -1,0 +1,8 @@
+src/linuxastrocam
+src/lib
+src/backup
+*.tar.gz
+*.lps
+*.res
+*~
+ 
